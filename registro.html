@@ -41,25 +41,19 @@
     </header>
     <section class="main">
       <div class="box-content">
-        <form action="">
+        <!-- Formulário atualizado -->
+        <form action="registro.php" method="POST">
           <h1>Cadastre-se para acompanhar as notícias!</h1>
           <div class="name">
-            <label for="nome"></label>
-            <input type="text" placeholder="Nome" id="nome" name="nome" >
-            <p id="nome-ajuda" class="msg-ajuda" style="display:none;">Mín. 3 caracteres</p>
+            <input type="text" placeholder="Nome" id="nome" name="nome" required>
           </div>
           <div class="email">
-            <label for="email"></label>
-            <input type="text" placeholder="Email" id="email" name="email">
-            <p id="email-ajuda" class="msg-ajuda" style="display:none;">Insira um email válido. Ex: abc@abc.com</p>
+            <input type="email" placeholder="Email" id="email" name="email" required>
           </div>
           <div class="telefone">
-            <label for="telefone"></label>
-            <input type="text" placeholder="Telefone" id="telefone" name="telefone">
-            <p id="tel-ajuda" class="msg-ajuda" style="display:none;">Insira um telefone válido. (11 números)</p>
+            <input type="text" placeholder="Telefone" id="telefone" name="telefone" required>
           </div>
-          <button class="btn-concluir">Concluir</button>
-
+          <button class="btn-concluir" type="submit">Concluir</button>
         </form>
       </div>
     </section>
