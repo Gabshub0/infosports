@@ -51,57 +51,7 @@
               Ela é dividida por uma rede colocada verticalmente sobre a linha central.
               O voleibol é jogado com uma bola e com as mãos.</p>
           </div>
-        </a>
-        </div>
-      <aside class="sidebar">
-        <div class="sidebarContent">
-          <div class="IMC">
-            <p>INDICE DE MASSA CORPORAL (IMC)</p>
-            <label for="#peso">Peso (KG)</label>
-            <input id="peso" type="text" placeholder="Digite o peso...">
-            <label for="#altura">Altura (M)</label>
-            <input id="altura" type="text" placeholder="Digite a altura...">
-            <button class="btnCalcular">Calcular</button>
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <footer class="footer">
-      <span>Info Sports</span>
-      <a href="#backToTop" class="footerAnchor">VOLTAR PARA O TOPO</a>
-    </footer>
-  </div>
-
-  <script>
-    document.querySelector('.btnCalcular').addEventListener('click', function() {
-      const peso = parseFloat(document.getElementById('peso').value);
-      const altura = parseFloat(document.getElementById('altura').value);
       
-      if (!peso || !altura) {
-        alert('Por favor, insira valores válidos para peso e altura.');
-        return;
-      }
-
-      const imc = peso / (altura * altura);
-      let classificacao;
-
-      if (imc < 18.5) {
-          classificacao = 'Abaixo do peso';
-      } else if (imc < 24.9) {
-          classificacao = 'Peso normal';
-      } else if (imc < 29.9) {
-          classificacao = 'Sobrepeso';
-      } else {
-          classificacao = 'Obesidade';
-      }
-
-      alert(`Seu IMC é ${imc.toFixed(2)}. Classificação: ${classificacao}`);
-    });
-  </script>
-        </div>
-      </aside>
-    </section>
         <a class="pag-link" href="futsal.html">
           <div class="categoryCard">
             <img src="https://static.todamateria.com.br/upload/fu/ts/futsal_sorocaba_1.jpg" alt="mainCardImg" class="mainCardImg" width=320px height=180px>
@@ -188,8 +138,54 @@
             <input id="altura" type="text" placeholder="Digite a altura...">
             <button class="btnCalcular">Calcular</button>
       </aside>
-
+ </a>
+        </div>
+      <aside class="sidebar">
+        <div class="sidebarContent">
+          <div class="IMC">
+            <p>INDICE DE MASSA CORPORAL (IMC)</p>
+            <label for="#peso">Peso (KG)</label>
+            <input id="peso" type="text" placeholder="Digite o peso...">
+            <label for="#altura">Altura (M)</label>
+            <input id="altura" type="text" placeholder="Digite a altura...">
+            <button class="btnCalcular">Calcular</button>
+          </div>
+        </div>
+      </aside>
     </section>
+
+    <footer class="footer">
+      <span>Info Sports</span>
+      <a href="#backToTop" class="footerAnchor">VOLTAR PARA O TOPO</a>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelector('.btnCalcular').addEventListener('click', function() {
+      const peso = parseFloat(document.getElementById('peso').value);
+      const altura = parseFloat(document.getElementById('altura').value);
+      
+      if (!peso || !altura) {
+        alert('Por favor, insira valores válidos para peso e altura.');
+        return;
+      }
+
+      const imc = peso / (altura * altura);
+      let classificacao;
+
+      if (imc < 18.5) {
+          classificacao = 'Abaixo do peso';
+      } else if (imc < 24.9) {
+          classificacao = 'Peso normal';
+      } else if (imc < 29.9) {
+          classificacao = 'Sobrepeso';
+      } else {
+          classificacao = 'Obesidade';
+      }
+
+      alert(`Seu IMC é ${imc.toFixed(2)}. Classificação: ${classificacao}`);
+    });
+  </script>
 
     <footer class="footer">
       <span>Info Sports</span>
