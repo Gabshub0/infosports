@@ -237,7 +237,7 @@
     </footer>
   </div>
 
- <script>
+<script>
     document.querySelector('.btnCalcular').addEventListener('click', function() {
       const peso = parseFloat(document.getElementById('peso').value);
       const alturaCm = parseFloat(document.getElementById('altura').value);
@@ -251,11 +251,11 @@
       const imc = peso / (alturaM * alturaM);
       let classificacao;
 
-      if (imc < 30.9) {
+      if (imc < 18.5) {
           classificacao = 'Abaixo do peso';
-      } else if (imc < 40.9) {
+      } else if (imc < 24.9) {
           classificacao = 'Peso normal';
-      } else if (imc < 60.9) {
+      } else if (imc < 29.9) {
           classificacao = 'Sobrepeso';
       } else {
           classificacao = 'Obesidade';
